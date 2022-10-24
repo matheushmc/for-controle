@@ -1,0 +1,32 @@
+<meta charset="UTF-8">
+<script>
+    /*
+    PROBLEMA
+    Faça um programa que peça para o usuário informar um número. Identifique se o número fornecido pelo usuário é um número primo e apresente na tela.
+    */
+
+    //ENTRADA
+
+    const numero = parseInt(prompt("me fale um numero"))
+    let contadorgamer = 0
+    let resposta 
+
+    //PROCESSAMENTO
+
+    for (let conta = 1; conta <= numero; conta++) {
+        if (numero % conta === 0) {
+            contadorgamer++
+        }
+
+        if (contadorgamer === 2) {
+            resposta = "é primo meu fi"
+        } else {
+            resposta = "não é primo meu fi"
+        }
+    }
+
+    //SAÍDA
+
+    document.write(`${numero} ${resposta}`)
+
+</script>
